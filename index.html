@@ -11,12 +11,10 @@
     <meta property="og:title" content="Đàm Văn Hoàng Bửu &amp; Hồ Thị Xuân Hương Wedding site!">
     <meta property="og:description"
         content="Đàm Văn Hoàng Bửu &amp; Hồ Thị Xuân Hương - Our wedding date: 2025-07-20 | Điều tuyệt vời nhất mà bạn từng học là yêu và được yêu để đáp lại">
-    <!-- <meta property="og:image"
-        content="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/364d1812a13c0fe039845636148438cc.jpeg">
-    <meta property="og:image:url"
-        content="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/364d1812a13c0fe039845636148438cc.jpeg">
-    <meta property="og:image:secure_url"
-        content="https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/364d1812a13c0fe039845636148438cc.jpeg"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Texturina:opsz,wght@12..72,100&amp;display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap" rel="stylesheet">
@@ -68,15 +66,15 @@
                         TRÂN TRỌNG KÍNH MỜI
                     </p>
                     <p id="invitaion_name" class="date-time text-center my-1 bold-text">
-                        
+
                     </p>
                     <p class="date-time text-center my-1">
                         Đến dự đám cưới của chúng tôi
                     </p>
-                    <p class="date-time text-center my-1">
+                    <p id="timeDL" class="date-time text-center my-1">
                         Ngày 20 tháng 07 năm 2025.
                     </p>
-                    <p class="date-time text-center my-1">
+                    <p id="timeAL" class="date-time text-center my-1">
                         Nhằm ngày 26/6 năm Ất Tỵ
                     </p>
                 </div>
@@ -86,8 +84,7 @@
                     <span>Xuân Hương</span>
                 </div>
                 <div data-aos="flip-left" data-aos-duration="1000" class="wrap-img aos-init aos-animate">
-                    <img src="./images/album/z6755633981970_d05b3f41da5ca4f57de687b441e7f24c.jpg"
-                        alt="">
+                    <img src="./images/album/z6755633981970_d05b3f41da5ca4f57de687b441e7f24c.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -153,7 +150,7 @@
                         data-aos="fade-left" data-index="1" style="position: absolute; left: 50%; top: 0px;"> <img
                             src="./images/album/z6755634860811_8da47ab3387adc45fdaa2c3d04b34715.jpg">
                     </div>
-                    
+
                     <script type="text/javascript">
                         photoGalleries.push({
                             src: "./images/album/z6755634068603_9fc8690b96287d75d0515639b0dd9d65.jpg",
@@ -174,7 +171,7 @@
                             subHtml: `<div class="lg-sub-html"><h4>Tình yêu không có rào cản. Nó nhảy rào, nhảy rào, xuyên tường để đến đích với đầy hy vọng</h4></div>`
                         });
                     </script>
-                    
+
                     <div class="col-6 gallery-item section-sub-title mb-2 btn-see-more-gallery aos-init"
                         data-aos="fade-left" data-index="3" style="position: absolute; left: 0%; top: 403.766px;"> <img
                             src="./images/album/z6755634817713_102e6bba5023fa5a428fd189fabfe5af.jpg">
@@ -277,7 +274,7 @@
                             subHtml: `<div class="lg-sub-html"><h4>Bước đi với bàn tay của bạn trong tay tôi và bàn tay của tôi trong tay bạn, đó chính xác là nơi tôi muốn luôn ở đó</h4></div>`
                         });
                     </script>
-                    
+
                     <script type="text/javascript">
                         photoGalleries.push({
                             src: "./images/album/z6755635144729_8214801eaad1bcbea7e739468dcdda70.jpg",
@@ -285,7 +282,7 @@
                             subHtml: `<div class="lg-sub-html"><h4>Bước đi với bàn tay của bạn trong tay tôi và bàn tay của tôi trong tay bạn, đó chính xác là nơi tôi muốn luôn ở đó</h4></div>`
                         });
                     </script>
-                    
+
                 </div>
 
                 <div class="text-center aos-init" data-aos="fade-up">
@@ -362,7 +359,9 @@
                                         <td>10</td>
                                         <td>11</td>
                                         <td>12</td>
-                                        <td>13</td>
+                                        <td>
+                                            <div id="todayWoman">13</div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>14</td>
@@ -372,7 +371,7 @@
                                         <td>18</td>
                                         <td>19</td>
                                         <td>
-                                            <div id="today">20</div>
+                                            <div id="todayMan">20</div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -434,8 +433,10 @@
                                     <span class="date">October 6 2020</span>
                                     <h3 class="title">Lời chào đầu tiên</h3>
                                     <p>
-                                        Ngày 6/10/2020, một ngày tưởng chừng như bình thường. Chú rể biết được cô dâu qua lời kể của một người bạn.
-                                        Một cô gái xinh đẹp, ngọt ngào. Một lời chào đầu tiên "Hi" được gửi đến qua facebook.
+                                        Ngày 6/10/2020, một ngày tưởng chừng như bình thường. Chú rể biết được cô dâu
+                                        qua lời kể của một người bạn.
+                                        Một cô gái xinh đẹp, ngọt ngào. Một lời chào đầu tiên "Hi" được gửi đến qua
+                                        facebook.
                                         Và từ đó câu chuyện tình yêu của tụi mình bắt đầu
                                     </p>
                                     <div class="img-holder">
@@ -461,7 +462,8 @@
                                     <span class="date">January 25 2025</span>
                                     <h3 class="title">Phút giây cầu hôn</h3>
                                     <p>
-                                        Hơn 4 năm bên nhau không phải là quãng thời gian quá dài, nhưng đủ cho chúng ta nhận
+                                        Hơn 4 năm bên nhau không phải là quãng thời gian quá dài, nhưng đủ cho chúng ta
+                                        nhận
                                         ra được rất nhiều điều. Yêu nhau, vun vén hạnh phúc và cùng nỗ lực vượt qua
                                         những khó khăn trong cuộc sống. Chúng ta từ 2 con người xa lạ mà bước vào cuộc
                                         đời nhau. Và giờ đây chúng ta tiếp tục cùng nhau sang trang mới. Giây phút anh
@@ -486,7 +488,7 @@
                                         của anh và sau này sẽ là mẹ của các con anh.
                                     </p>
                                     <div class="img-holder">
-                                        <img src="./images/timeline/508425443_3918920218419960_1296456265653892272_n.jpg"
+                                        <img src="./images/timeline/508331430_3918919278420054_4202930911389804669_n.jpg"
                                             alt="">
                                     </div>
                                 </div>
@@ -505,64 +507,10 @@
                 <h3 data-aos="fade-up" class="section-sub-title mb-4 text-center aos-init">
                     Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng tôi!
                 </h3>
-                <div data-aos="flip-right"
-                    class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden aos-init">
-                    <div class="image-wrap"
-                        style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/a56f49160e491df034502ac77c24abf5.jpeg');">
-                    </div>
-                    <div class="info-wrap p-3">
-                        <h5 class="section-sub-title">LỄ CƯỚI NHÀ NỮ</h5>
-                        <strong>07:30 13/07/2025</strong>
-                        <p class="card-text">
-                            <span>TƯ GIA NHÀ NỮ - </span>
-                            Thôn Cổ Châu, Xã Duy Hoà, Huyện Duy Xuyên, Tỉnh Quảng Nam
-                        </p>
-                        <div class="calendar-button" style="display:none;">
-                            <div class="atcb-initialized" style="display: block;">
-                                <script type="application/ld+json">{
-"@context":"https://schema.org",
-"@type":"Event",
-"name":"LỄ CƯỚI NHÀ NỮ (Đám cưới Hoàng Bửu và Xuân Hương)",
-"description":"Cảm ơn bạn đã dành thời gian tham dự đám cưới của chúng tôi!",
-"startDate":"2025-07-13T07:30:00+07:00",
-"duration":"00:00",
-"location":"Thôn Cổ Châu, Xã Duy Hoà, Huyện Duy Xuyên, Tỉnh Quảng Nam",
-"endDate":"2025-07-13T07:30:00+07:00",
-}</script>
-                                <div class="atcb-button-wrapper atcb-light"
-                                    style="--base-font-size-l: 16px; --base-font-size-m: 16px; --base-font-size-s: 16px;">
-                                    <button class="atcb-button atcb-click" type="button" id="atcb-btn-1"><span
-                                            class="atcb-icon"><span class="atcb-icon-trigger"><svg
-                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200.016">
-                                                    <path
-                                                        d="M132.829 7.699c0-4.248 4.199-7.699 9.391-7.699s9.391 3.451 9.391 7.699v33.724c0 4.248-4.199 7.699-9.391 7.699s-9.391-3.451-9.391-7.699zm-5.941 123.747c2.979 0 5.404 2.425 5.404 5.404s-2.425 5.404-5.404 5.404l-21.077-.065-.065 21.045c0 2.979-2.425 5.404-5.404 5.404s-5.404-2.425-5.404-5.404l.065-21.061-21.045-.081c-2.979 0-5.404-2.425-5.404-5.404s2.425-5.404 5.404-5.404l21.061.065.065-21.045c0-2.979 2.425-5.404 5.404-5.404s5.404 2.425 5.404 5.404l-.065 21.077 21.061.065zM48.193 7.699C48.193 3.451 52.393 0 57.585 0s9.391 3.451 9.391 7.699v33.724c0 4.248-4.199 7.699-9.391 7.699s-9.391-3.451-9.391-7.699zM10.417 73.763h179.167V34.945c0-1.302-.537-2.49-1.4-3.369-.863-.863-2.051-1.4-3.369-1.4h-17.171c-2.881 0-5.208-2.327-5.208-5.208s2.327-5.208 5.208-5.208h17.171c4.183 0 7.975 1.709 10.726 4.46S200 30.762 200 34.945v44.043 105.843c0 4.183-1.709 7.975-4.46 10.726s-6.543 4.46-10.726 4.46H15.186c-4.183 0-7.975-1.709-10.726-4.46C1.709 192.79 0 188.997 0 184.814V78.988 34.945c0-4.183 1.709-7.975 4.46-10.726s6.543-4.46 10.726-4.46h18.343c2.881 0 5.208 2.327 5.208 5.208s-2.327 5.208-5.208 5.208H15.186c-1.302 0-2.49.537-3.369 1.4-.863.863-1.4 2.051-1.4 3.369zm179.167 10.433H10.417v100.618c0 1.302.537 2.49 1.4 3.369.863.863 2.051 1.4 3.369 1.4h169.629c1.302 0 2.49-.537 3.369-1.4.863-.863 1.4-2.051 1.4-3.369zM82.08 30.176c-2.881 0-5.208-2.327-5.208-5.208s2.327-5.208 5.208-5.208h34.977c2.881 0 5.208 2.327 5.208 5.208s-2.327 5.208-5.208 5.208z">
-                                                    </path>
-                                                </svg></span></span><span class="atcb-text">Thêm vào lịch</span>
-                                        <div class="atcb-dropdown-anchor"></div>
-                                        <div class="atcb-checkmark"><span class="atcb-icon-checkmark"><svg
-                                                    viewBox="0 0 122.88 122.87" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill:#39b54a;=""
-                                                        d="m33.666 50.046s6.0748-0.59297 17.413 4.2983c9.3883 4.5751 11.891 8.3955 11.891 8.3955 5.38-8.65 11.11-16.6 17.16-23.9 10.412-12.578 24.613-22.448 24.613-22.448l14.257-0.012228s-19.308 19.294-32.483 38.51c-13.175 19.216-22.877 41.21-22.877 41.21s-9.3948-18.164-14.53-24.53-10.77-11.59-17.52-16.22z"
-                                                        fill="#45b555"></path>
-                                                    <path fill:#3c3c3c;=""
-                                                        d="m61.44 0c9.53 0 18.55 2.17 26.61 6.04-3.3 2.61-6.36 5.11-9.21 7.53-5.43-1.97-11.28-3.05-17.39-3.05-14.06 0-26.79 5.7-36 14.92s-14.92 21.94-14.92 36 5.7 26.78 14.92 36 21.94 14.92 36 14.92 26.79-5.7 36-14.92c9.22-9.22 14.91-21.94 14.91-36 0-3.34-0.32-6.62-0.94-9.78 2.64-3.44 5.35-6.88 8.11-10.28 2.17 6.28 3.35 13.04 3.35 20.06 0 16.96-6.88 32.33-17.99 43.44-11.12 11.12-26.48 18-43.44 18s-32.32-6.88-43.44-18c-11.13-11.12-18.01-26.48-18.01-43.44 0-16.97 6.88-32.33 17.99-43.44 11.12-11.12 26.48-18 43.45-18z">
-                                                    </path>
-                                                </svg></span></div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#" data-index="1"
-                            class="section-sub-title btn btn-sm btn-secondary calendar-button-custom-click">Thêm vào
-                            lịch</a>
-                        <a href="https://maps.app.goo.gl/9kdyo2ijWVQmUokp8"
-                            target="_blank" class="section-sub-title btn btn-sm btn-secondary">Xem bản đồ</a>
-                    </div>
-                </div>
                 <div data-aos="flip-left"
                     class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden aos-init">
                     <div class="image-wrap"
-                        style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/8c252c049ba79095c2eef460c20b2bf4.jpeg');">
+                        style="background-image: url('./images/album/z6755635107639_956d74ebef8860ec842f0a34166d303b.jpg');">
                     </div>
                     <div class="info-wrap p-3">
                         <h5 class="section-sub-title">TIỆC CƯỚI NHÀ NỮ</h5>
@@ -609,8 +557,8 @@
                         <a href="#" data-index="2"
                             class="section-sub-title btn btn-sm btn-secondary calendar-button-custom-click">Thêm vào
                             lịch</a>
-                        <a href="https://maps.app.goo.gl/d2mPx2nZqG6pTzKW6"
-                            target="_blank" class="section-sub-title btn btn-sm btn-secondary">Xem bản đồ</a>
+                        <a href="https://maps.app.goo.gl/d2mPx2nZqG6pTzKW6" target="_blank"
+                            class="section-sub-title btn btn-sm btn-secondary">Xem bản đồ</a>
                     </div>
                 </div>
                 <div data-aos="flip-right"
@@ -662,8 +610,8 @@
                         <a href="#" data-index="3"
                             class="section-sub-title btn btn-sm btn-secondary calendar-button-custom-click">Thêm vào
                             lịch</a>
-                        <a href="https://maps.app.goo.gl/uGLZTzdN7dE54UkA8"
-                            target="_blank" class="section-sub-title btn btn-sm btn-secondary">Xem bản đồ</a>
+                        <a href="https://maps.app.goo.gl/uGLZTzdN7dE54UkA8" target="_blank"
+                            class="section-sub-title btn btn-sm btn-secondary">Xem bản đồ</a>
                     </div>
                 </div>
                 <div data-aos="flip-left"
@@ -716,8 +664,8 @@
                         <a href="#" data-index="4"
                             class="section-sub-title btn btn-sm btn-secondary calendar-button-custom-click">Thêm vào
                             lịch</a>
-                        <a href="https://maps.app.goo.gl/d6isqjpTRPRdFLhV9"
-                            target="_blank" class="section-sub-title btn btn-sm btn-secondary">Xem bản đồ</a>
+                        <a href="https://maps.app.goo.gl/d6isqjpTRPRdFLhV9" target="_blank"
+                            class="section-sub-title btn btn-sm btn-secondary">Xem bản đồ</a>
                     </div>
                 </div>
             </div>
@@ -731,8 +679,7 @@
                 <div id="wrap-couple" class="section-title wrap-people text-center">
                     <div data-aos="fade-up" class="member member-groom py-5 aos-init">
                         <div data-aos="fade-up-right" class="wrap-img aos-init">
-                            <img
-                                src="./images/album/z6755634770069_5e655cf301a2b2571f3a6fdc2a945a6b.jpg">
+                            <img src="./images/album/z6755634770069_5e655cf301a2b2571f3a6fdc2a945a6b.jpg">
                         </div>
 
                         <div class="parent my-2 d-flex flex-column text-center mx-auto">
@@ -762,8 +709,7 @@
                     </div>
                     <div data-aos="fade-up" class="member member-bride py-5 aos-init">
                         <div data-aos="fade-up-right" class="wrap-img aos-init">
-                            <img
-                                src="./images/album/z6755634499593_2944d636d640bb5d81e89a976e78c88a.jpg">
+                            <img src="./images/album/z6755634499593_2944d636d640bb5d81e89a976e78c88a.jpg">
                         </div>
 
                         <div class="parent my-2 d-flex flex-column text-center mx-auto">
@@ -804,24 +750,8 @@
                         Thật vui vì được gặp và đón tiếp các bạn trong một dịp đặc biệt như đám cưới của chúng tôi.
                     </h3>
                     <div class="row d-flex justify-content-around donate-box mb-1">
-                        <div data-aos="fade-right" class="col-6 mb-4 donate-wrap aos-init">
+                        <div data-aos="fade-left" class="col-7 donate-wrap aos-init">
                             <div class="donate-card p-3 px-4 rounded text-center border-0">
-                                <strong class="d-block sub-title mb-2 text-uppercase">Đến chú rể</strong>
-                                <img preload class="qr-code-image m-auto mb-2"
-                                    src="./images/qr/BIDV-5611295358-compact.png">
-                                <p class="mb-1">Ngân hàng: <strong>BIDV</strong></p>
-                                <p class="mb-1">
-                                    Tên tài khoản: <strong>5611295358</strong>
-                                </p>
-                                <p class="mb-1">
-                                    Số tài khoản: <strong>Đàm Văn Hoàng Bửu</strong>
-                                </p>
-                                <p class="mb-1">Chi nhánh: <strong>Đà Nẵng</strong></p>
-                            </div>
-                        </div>
-                        <div data-aos="fade-left" class="col-6 donate-wrap aos-init">
-                            <div class="donate-card p-3 px-4 rounded text-center border-0">
-                                <strong class="d-block sub-title mb-2 text-uppercase">Đến cô dâu</strong>
                                 <img preload class="qr-code-image m-auto mb-2"
                                     src="./images/qr/OCB-0935881148-compact.png">
                                 <p class="mb-1">Ngân hàng: <strong>OCB</strong></p>
@@ -1062,26 +992,9 @@
                     Thật vui vì được gặp và đón tiếp các bạn trong một dịp đặc biệt như đám cưới của chúng tôi.
                 </h3>
                 <div class="row justify-content-center donate-box mb-1">
-                    <div data-aos="fade-right" class="col-6 px-4 mb-4 aos-init aos-animate">
-                        <div class="donate-card p-4 rounded text-center">
-                            <strong class="d-block sub-title mb-2 text-uppercase">Đến chú rể</strong>
-                            <img class="qr-code-image m-auto mb-2"
-                                src="./images/qr/BIDV-5611295358-compact.png">
-                            <p class="mb-1">Ngân hàng: <strong>BIDV</strong></p>
-                            <p class="mb-1">
-                                Tên tài khoản: <strong>5611295358</strong>
-                            </p>
-                            <p class="mb-1">
-                                Số tài khoản: <strong>Đàm Văn Hoàng Bửu</strong>
-                            </p>
-                            <p class="mb-1">Chi nhánh: <strong>Đà Nẵng</strong></p>
-                        </div>
-                    </div>
                     <div data-aos="fade-left" class="col-6 px-4 aos-init aos-animate">
                         <div class="donate-card p-4 rounded text-center">
-                            <strong class="d-block sub-title mb-2 text-uppercase">Đến cô dâu</strong>
-                            <img class="qr-code-image m-auto mb-2"
-                                src="./images/qr/OCB-0935881148-compact.png">
+                            <img class="qr-code-image m-auto mb-2" src="./images/qr/OCB-0935881148-compact.png">
                             <p class="mb-1">Ngân hàng: <strong>OCB</strong></p>
                             <p class="mb-1">
                                 Tên tài khoản: <strong>0935881148</strong>
@@ -1127,10 +1040,10 @@
 
     <script type="text/javascript">
         function playPauseMusic() {
-            if(document.getElementById('playerVolumeOn').style.display == "none"){
+            if (document.getElementById('playerVolumeOn').style.display == "none") {
                 document.getElementById("playerVolumeOn").style.display = "block";
                 document.getElementById("playerVolumeOff").style.display = "none";
-            }else{
+            } else {
                 document.getElementById("playerVolumeOn").style.display = "none";
                 document.getElementById("playerVolumeOff").style.display = "block";
             }
@@ -1140,10 +1053,23 @@
             const urlParams = new URLSearchParams(window.location.search);
             return urlParams.get(param);
         }
-        
+
         const guestName = getQueryParam('name');
         if (guestName) {
             document.getElementById('invitaion_name').innerText = `${decodeURIComponent(guestName)}`;
+        }
+
+        const isMan = getQueryParam('isMan');
+        if (isMan == 'true') {
+            document.getElementById('timeDL').innerText = "Ngày 20 tháng 07 năm 2025."
+            document.getElementById('timeAL').innerText = "Nhằm ngày 26/6 năm Ất Tỵ"
+            document.getElementById('clock').setAttribute('data-date', "2025-07-20");
+            document.getElementById('todayMan').classList.add('today');
+        } else {
+            document.getElementById('timeDL').innerText = "Ngày 13 tháng 07 năm 2025."
+            document.getElementById('timeAL').innerText = "Nhằm ngày 19/6 năm Ất Tỵ"
+            document.getElementById('clock').setAttribute('data-date', "2025-07-13");
+            document.getElementById('todayWoman').classList.add('today');
         }
 
         function sanitizeJsonString(jsonString) {

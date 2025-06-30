@@ -122,7 +122,7 @@ img {width: 100%;max-width: 100%;height: auto;}
 .weddingdate-section .mini_calendar table tr:nth-child(2) td {padding-top: 20px;height: 60px;}
 .weddingdate-section .mini_calendar td {font-size: 0.9em;text-align: center;width: 40px;height: 40px;vertical-align: middle;color: #484747;}
 .weddingdate-section .mini_calendar .calendar-month {text-align: center;margin-bottom: 20px;font-weight: 400;color: #203447;text-transform: uppercase;}
-.weddingdate-section .mini_calendar td #today{display: inline-block;width: 30px;height: 30px;line-height: 20px;padding: 5px;background-color: rgb(200, 157, 156);color: #fff;border-radius: 50%;}
+.weddingdate-section .mini_calendar td .today{display: inline-block;width: 30px;height: 30px;line-height: 20px;padding: 5px;background-color: rgb(200, 157, 156);color: #fff;border-radius: 50%;}
 .weddingdate-section #clock {max-width: 485px;overflow: hidden;}
 .weddingdate-section #clock > div {width: 25%;float: left;text-align: center;padding: 30px 15px 0;color: rgb(200, 157, 156);}
 .weddingdate-section #clock .box > div {font-size: 3rem;margin-bottom: 0.1em;line-height: .8em;}

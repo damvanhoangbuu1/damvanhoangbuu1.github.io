@@ -415,7 +415,7 @@ body {
 .weddingdate-section .mini_calendar td {
   color: #5c5c5c;
 }
-.weddingdate-section .mini_calendar td #today {
+.weddingdate-section .mini_calendar td .today {
   background: #9baba8;
   color: #fff;
 }

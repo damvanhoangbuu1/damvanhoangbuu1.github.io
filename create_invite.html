@@ -25,7 +25,11 @@
                 <div class="textarea-emoji-picker position-relative">
                     <div class="vitualTextarea form-control px-0">
                         <input type="text" id="content" name="content" class="form-control border-0" rows="3" cols=""
-                            placeholder="Nhập tên người nhận thiệp*"></textarea>
+                            placeholder="Nhập tên người nhận thiệp*">
+                    </div>
+                    <div style="display: flex;justify-content: center;">
+                        <label>Nhà trai &nbsp;</label>
+                        <input type="checkbox" id="isMan">
                     </div>
                 </div>
                 <div class="col-auto text-center" style="margin-top: 10px;">
@@ -37,7 +41,7 @@
         <script>
             function create_invite() {
                 var content = document.getElementById("content").value;
-                var url = "/?name=" + encodeURIComponent(content);
+                var url = "/?name=" + encodeURIComponent(content) + "&isMan=" + document.getElementById("isMan").checked;
                 window.location.href = url;
             }
         </script>
