@@ -21,7 +21,6 @@
 
 <body>
     <div id="section-comment" class="pb-3">
-        <form action="" id="wish-form" class="py-4 mx-4 contact-validation-active" novalidate="novalidate">
             <div class="col-auto mb-3">
                 <div class="textarea-emoji-picker position-relative">
                     <div class="vitualTextarea form-control px-0">
@@ -35,11 +34,10 @@
                     </button>
                 </div>
             </div>
-        </form>
         <script>
             function create_invite() {
                 var content = document.getElementById("content").value;
-                var url = window.location.origin + "/?name=" + encodeURIComponent(content);
+                var url = "/?name=" + encodeURIComponent(content);
                 window.location.href = url;
             }
         </script>
