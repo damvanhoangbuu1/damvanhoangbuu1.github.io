@@ -330,7 +330,7 @@
         <section class="py-5 section-sub-title weddingdate-section section-bg-affect" id="weddingdate">
             <div class="container-fluid">
                 <div class="w-100">
-                    <div class="mini_calendar m-auto pb-3 aos-init" data-aos="fade-up-right">
+                    <!-- <div class="mini_calendar m-auto pb-3 aos-init" data-aos="fade-up-right">
                         <div class="mini_calendar">
                             <table>
                                 <caption class="calendar-month">Tháng 7 / 2025</caption>
@@ -395,6 +395,23 @@
                             </table>
                         </div>
 
+                    </div> -->
+                    <div class="wedding-calendar" data-aos="fade-up-right">
+                        <h2>THÁNG 7 / 2025</h2>
+                        <table class="calendar-table">
+                            <thead>
+                                <tr>
+                                    <th>Thứ 2</th><th>Thứ 3</th><th>Thứ 4</th><th>Thứ 5</th><th>Thứ 6</th><th>Thứ 7</th><th>CN</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>30</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                                <tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td><span id="todayWoman">13</span></td></tr>
+                                <tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td><span id="todayMan">20</span></td></tr>
+                                <tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td></tr>
+                                <tr><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td></tr>
+                            </tbody>
+                        </table>
                     </div>
                     <div class="countdown aos-init" data-aos="fade-up-left">
                         <div class="m-auto" id="clock" data-date="2025-07-20" data-text-day="Ngày" data-text-hour="Giờ"
@@ -1065,12 +1082,12 @@
             document.getElementById('timeDL').innerText = "Ngày 20 tháng 07 năm 2025."
             document.getElementById('timeAL').innerText = "Nhằm ngày 26/6 năm Ất Tỵ"
             document.getElementById('clock').setAttribute('data-date', "2025-07-20");
-            document.getElementById('todayMan').classList.add('today');
+            document.getElementById('todayMan').classList.add('wedding-day');
         } else {
             document.getElementById('timeDL').innerText = "Ngày 13 tháng 07 năm 2025."
             document.getElementById('timeAL').innerText = "Nhằm ngày 19/6 năm Ất Tỵ"
             document.getElementById('clock').setAttribute('data-date', "2025-07-13");
-            document.getElementById('todayWoman').classList.add('today');
+            document.getElementById('todayWoman').classList.add('wedding-day');
         }
 
         function sanitizeJsonString(jsonString) {
