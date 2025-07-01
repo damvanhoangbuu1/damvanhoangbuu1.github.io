@@ -197,4 +197,15 @@ $(document).ready(function () {
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     });
+
+    function playSound() {
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+            document.getElementById('playerVolumeOff').style.display = 'none';
+            document.getElementById('playerVolumeOn').style.display = 'block';
+            clearTimeout(playSound);
+        }
+    }
+
+    setTimeout(playSound, 2000);
 });
