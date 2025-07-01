@@ -198,15 +198,23 @@ $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip()
     });
 
-    function playSound() {
-        const audioPlayer = document.getElementById('audioPlayer');
-        if (audioPlayer.paused) {
-            audioPlayer.play();
-            document.getElementById('playerVolumeOff').style.display = 'none';
-            document.getElementById('playerVolumeOn').style.display = 'block';
-            clearTimeout(playSound);
+    const audio = document.getElementById('audioPlayer');
+
+    const playMusicOnce = function () {
+        if (audio && audio.paused) {
+            audio.play().then(() => {
+                console.log("Âm thanh đã được phát");
+                document.getElementById('playerVolumeOff').style.display = 'none';
+                document.getElementById('playerVolumeOn').style.display = 'block';
+            }).catch(err => {
+                console.warn("Trình duyệt chặn phát nhạc tự động:", err);
+            });
         }
-    }
+
+        $('body').off('click touchstart', playMusicOnce);
+    };
+
+    $('body').on('click touchstart', playMusicOnce);
 
     setTimeout(playSound, 2000);
 });
