@@ -10,7 +10,8 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Đàm Văn Hoàng Bửu &amp; Hồ Thị Xuân Hương Wedding site!">
     <meta property="og:description"
-        content="Đàm Văn Hoàng Bửu &amp; Hồ Thị Xuân Hương - Our wedding date: 2025-07-20 | Điều tuyệt vời nhất mà bạn từng học là yêu và được yêu để đáp lại">
+        content="Đàm Văn Hoàng Bửu &amp; Hồ Thị Xuân Hương - Our wedding date: 2025-07-20">
+    <link rel="icon" href="./templates/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.min.css">
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
@@ -564,13 +565,13 @@
                 <div data-aos="flip-right"
                     class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden aos-init">
                     <div class="image-wrap"
-                        style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/d7404d5d638625c739815ec707973cb8.jpeg');">
+                        style="background-image: url('./images/album/z6755634314680_acb59f502e27e1b8e62c7c9ef8cbd918.jpg');">
                     </div>
                     <div class="info-wrap p-3">
                         <h5 class="section-sub-title">LỄ CƯỚI NHÀ NAM</h5>
                         <strong>09:00 20/07/2025</strong>
                         <p class="card-text">
-                            <span> TƯ GIA NAM </span>
+                            <span>Tư gia nam</span> - Thị trấn Trung Phước, Nông Sơn, Quảng Nam
                         </p>
                         <div class="calendar-button" style="display:none;">
                             <div class="atcb-initialized" style="display: block;">
@@ -617,14 +618,14 @@
                 <div data-aos="flip-left"
                     class="event-item d-flex flex-row p-0 border-0 rounded overflow-hidden aos-init">
                     <div class="image-wrap"
-                        style="background-image: url('https://cdn.biihappy.com/ziiweb/website/61990349db8f76231c132068/ca5b9285ac176d4edc6cfe30e30d0a72.jpeg');">
+                        style="background-image: url('./images/album/z6755635144729_8214801eaad1bcbea7e739468dcdda70.jpg');">
                     </div>
                     <div class="info-wrap p-3">
                         <h5 class="section-sub-title">TIỆC CƯỚI NHÀ NAM</h5>
                         <strong>12:00 20/07/2025</strong>
                         <p class="card-text">
-                            <span> - </span>
-                            Sân bóng Đá Béo, Thị trấn Trung Phước, Nông Sơn, Quảng Nam
+                            <span>Sân bóng Đá Béo - </span>
+                            Thị trấn Trung Phước, Nông Sơn, Quảng Nam
                         </p>
                         <div class="calendar-button" style="display:none;">
                             <div class="atcb-initialized" style="display: block;">
@@ -1092,12 +1093,36 @@
             });
             return parsed;
         }
-        let biicore = parseJsonRecursively('{"template_id":"643d783d4952f55248073b44","templatePremium":true,"themeRoot":"https:\/\/preview.iwedding.info\/templates\/template110","webroot":"https:\/\/preview.iwedding.info","coreSite":"https:\/\/biihappy.com","webToken":"61990349db8f76231c132068","isPremium":true,"bgMusic":"https:\/\/cdn.biihappy.com\/ziiweb\/wedding-musics\/IDo-911.mp3","alert":{"title":"L\u1eddi c\u1ea3m \u01a1n t\u1eeb D\u00e2u &amp; R\u1ec3","content":"Xin ch\u00e2n th\u00e0nh c\u1ea3m \u01a1n to\u00e0n th\u1ec3 m\u1ecdi ng\u01b0\u1eddi \u0111\u00e3 g\u1eedi l\u1eddi ch\u00fac cho v\u1ee3 ch\u1ed3ng ch\u00fang em!","timeout":5000,"status":2,"cancel_button_text":""},"effect":"{\\\"type\\\":\\\"snow\\\"}","logo":"https:\/\/iwedding.info\/common\/imgs\/bii.png?v=20210131","url_landing_page":"https:\/\/biihappy.com\/iwedding","isAutoPlay":true,"footer_title":"iWedding | N\u1ec1n t\u1ea3ng t\u1ea1o website \u0111\u00e1m c\u01b0\u1edbi mi\u1ec5n ph\u00ed t\u1eeb Biihappy","footer_title_mobile":"T\u1ea1o website \u0111\u00e1m c\u01b0\u1edbi mi\u1ec5n ph\u00ed"}');
+        let biicore = {
+            "template_id": "643d783d4952f55248073b44",
+            "templatePremium": true,
+            "themeRoot": "https://preview.iwedding.info/templates/template110",
+            "webroot": "https://preview.iwedding.info",
+            "coreSite": "https://biihappy.com",
+            "webToken": "61990349db8f76231c132068",
+            "isPremium": false,
+            "bgMusic": "",
+            "alert": {
+                "title": "Lời cảm ơn từ Dâu &amp; Rể",
+                "content": "Xin chân thành cảm ơn toàn thể mọi người đã gửi lời chúc cho vợ chồng chúng em!",
+                "timeout": 5000,
+                "status": 2,
+                "cancel_button_text": ""
+            },
+            "effect": {
+                "type": "snow"
+            },
+            "logo": "./templates/logo.png",
+            "url_landing_page": "https://biihappy.com/iwedding",
+            "isAutoPlay": true,
+            "footer_title": "",
+            "footer_title_mobile": ""
+        }
     </script>
     <script src="./templates/template110/js/libs.js?v=20250312"></script>
     <script src="./templates/template110/js/script.js?v=20250312"></script>
     <script src="./common/calendar.js?v=20250312"></script>
-    <script src="./common/biicommon.min.js?v=20250312"></script>
+    <script src="./common/biicommon.min.js?v=20250701"></script>
     <style type="text/css">
         .mouse-scroll-on-mobile {
             display: none;
@@ -1324,10 +1349,10 @@
         }
     </style>
     <div class="bii-player" style="display: block;">
-        <div onclick="playPauseMusic();" class="bii-player-secondary">
+        <div onclick="playPause();" class="bii-player-secondary">
             <div class="bii-player-secondary-content">Click vào đây nếu bạn muốn phát nhạc!</div>
         </div>
-        <div onclick="playPauseMusic();" class="playerIcon">
+        <div onclick="playPause();" class="playerIcon">
             <span id="playerVolumeOff" style="display: none;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="27" fill="#fff"
                     class="bi bi-volume-mute-fill" viewBox="0 0 16 16">
@@ -1362,7 +1387,7 @@
         }
     </script>
 
-    <audio src="./templates/mp3/IDo-911.mp3" controls="controls" loop="" autoplay="autoplay"
+    <audio id="audioPlayer" src="./templates/mp3/MotDoi.mp3" controls="controls" loop="" autoplay="autoplay"
         style="display: none;"></audio>
     <div class="snowfall-flakes"
         style="background: rgb(255, 255, 255); width: 1.24px; height: 1.24px; position: absolute; font-size: 0px; z-index: 999999; border-radius: 8px; box-shadow: rgb(85, 85, 85) 1px 1px 1px; top: 7662px; left: 194.414px;">
