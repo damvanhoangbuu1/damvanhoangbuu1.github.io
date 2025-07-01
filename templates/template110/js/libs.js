@@ -78,7 +78,9 @@ j=Math.ceil((f+1)*b)-Math.floor(f*b);d.fillRect(Math.round(i*b),Math.round(f*e),
 d+"px").css("background-color",a.isDark(e,i)?h.foreground:h.background).appendTo(f)}}a=c;jQuery(a).appendTo(this)})}})(jQuery);
 
 $("document").ready(function ($) {
-	AOS.init();
+	AOS.init({
+    once: true // 👈 chỉ animate 1 lần khi phần tử xuất hiện lần đầu
+  });
     var banner = $('.banner-section');
     var nav = $('.site-header');
     var resetMenuHeader = function() {
@@ -159,7 +161,7 @@ $("document").ready(function ($) {
             download: false,
             autoplay: true,
             preload: 2,
-            appendSubHtmlTo: '.lg-item',
+            appendSubHtmlTo: '.lg-sub-html',
             index: parseInt(indexNumber)
         });
     });
