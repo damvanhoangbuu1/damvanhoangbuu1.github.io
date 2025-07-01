@@ -199,6 +199,7 @@ $(document).ready(function () {
     });
 
     function playSound() {
+        const audioPlayer = document.getElementById('audioPlayer');
         if (audioPlayer.paused) {
             audioPlayer.play();
             document.getElementById('playerVolumeOff').style.display = 'none';
