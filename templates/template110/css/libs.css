@@ -115,6 +115,63 @@ img {width: 100%;max-width: 100%;height: auto;}
 .story-section .timeline-1 .date{font-weight: 300;}
 .story-section .timeline-1 .date > i{color:#d2c5a1;}
 .story-section .timeline-1 .img-holder > img{max-width: 300px;}
+/* Thêm reset cho iOS Safari */
+.weddingdate-section * {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Force lịch scale đẹp trên iOS */
+.weddingdate-section .mini_calendar {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 12px;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Table không tràn và giữ kích thước đẹp */
+.weddingdate-section .mini_calendar table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+/* Thêm clear float vào đồng hồ */
+.weddingdate-section #clock::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Sửa lại kích thước để khớp tốt hơn trên iPhone */
+.weddingdate-section .mini_calendar td {
+  font-size: 1rem;
+  width: 14.28%;
+  height: 44px;
+}
+
+.weddingdate-section .mini_calendar table th {
+  font-size: 0.95rem;
+  padding: 10px 0;
+}
+
+/* Cải thiện hiển thị ngày được chọn (hôm nay) */
+.weddingdate-section .mini_calendar td .today {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0;
+  font-weight: bold;
+}
+
+/* Clock */
+.weddingdate-section #clock > div {
+  width: 25%;
+  padding: 20px 5px 0;
+}
+
 
 .weddingdate-section .mini_calendar{max-width: 420px;}
 .weddingdate-section .mini_calendar table{caption-side: top;width: 100%;}
