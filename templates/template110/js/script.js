@@ -141,32 +141,12 @@
     	$(this).parent().find('.calendar-button .atcb-click').click();
     });
 
-        /*------------------------------------------
-    = MENU ACCESSBILITY
-    -------------------------------------------*/
-    $('.btn-menu-open').click(function() {
-        $('ul.list-menu-icon').css('opacity','1');
-        $('ul.list-menu-icon').css('pointer-events','');
-        $('.btn-menu-close').show();
-        $('.btn-menu-open').hide();
-    })
-    $('.btn-menu-close').click(function() {
-        $('ul.list-menu-icon').css('opacity','0');
-        $('ul.list-menu-icon').css('pointer-events','none');
-        $('.btn-menu-open').show();
-        $('.btn-menu-close').hide();
-    })
-    setTimeout(() => {
-        $('.btn-menu-open').hide();
-        $('.btn-menu-close').show();
-        $('ul.list-menu-icon').css('opacity','1');
-    }, 3000); 
-    $( window ).on("load", function(){
-		if($('.bii-logo').length > 0){
-			$('#menu-access').css('bottom','278px');
-			document.querySelector('style').textContent += "@media (max-width: 799px){#menu-access{bottom: 238px!important;}}"
-		} 
-	})
+    // $( window ).on("load", function(){
+	// 	if($('.bii-logo').length > 0){
+	// 		$('#menu-access').css('bottom','278px');
+	// 		document.querySelector('style').textContent += "@media (max-width: 799px){#menu-access{bottom: 238px!important;}}"
+	// 	} 
+	// })
 
 })(window.jQuery);
 

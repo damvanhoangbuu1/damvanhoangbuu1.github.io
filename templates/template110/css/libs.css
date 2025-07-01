@@ -348,7 +348,8 @@ img {width: 100%;max-width: 100%;height: auto;}
 .menu-icon{
 	font-size: 25px;
 }
-.btn-menu-open,.btn-menu-close{
+
+.btn-menu-donate{
 	cursor: pointer;
 	width: 40px;
 	height: 40px;
@@ -362,7 +363,7 @@ img {width: 100%;max-width: 100%;height: auto;}
 	position: relative;
 	bottom: -156px;
 }
-.btn-menu-open::after,.btn-menu-close::after{
+.btn-menu-donate::after{
 	position: absolute;
 	display: block;
 	content: "";
@@ -383,22 +384,6 @@ img {width: 100%;max-width: 100%;height: auto;}
 	height: 25px;
 	width: auto;
 	margin-top: 4px;
-}
-.btn-menu-close{
-	display: none;
-	position: absolute;
-}
-.btn-menu-open > i{
-	padding-top: 12px;
-    padding-left: 6px;
-	font-size: 28px;
-	font-weight: bold;
-}
-.btn-menu-close > i{
-	padding-top: 12px;
-    padding-left: 6px;
-	font-size: 28px;
-	font-weight: bold;
 }
 
 @media (max-width: 799px){
