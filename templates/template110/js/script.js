@@ -215,6 +215,4 @@ $(document).ready(function () {
     };
 
     $('body').on('click touchstart', playMusicOnce);
-
-    setTimeout(playSound, 2000);
 });
