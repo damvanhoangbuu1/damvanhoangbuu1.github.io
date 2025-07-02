@@ -5,7 +5,7 @@ class SnowEffect {
         this.snowflakes = [];
         this.maxSnowflakes = 50;
         this.animationTypes = ['snow-fall-1', 'snow-fall-2', 'snow-fall-3'];
-        this.snowflakeSymbols = ['❄', '❅', '✱', '✲', '❊'];
+        this.snowflakeSymbols = ['❅', '❆', '✱', '✲', '❊'];
         
         this.init();
     }
