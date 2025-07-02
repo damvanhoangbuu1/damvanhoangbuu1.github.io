@@ -5,7 +5,7 @@ class SnowEffect {
         this.snowflakes = [];
         this.maxSnowflakes = 50;
         this.animationTypes = ['snow-fall-1', 'snow-fall-2', 'snow-fall-3'];
-        this.snowflakeSymbols = ['❄', '❅', '❆', '✱', '✲', '❊', '✦'];
+        this.snowflakeSymbols = ['❄', '❅', '✱', '✲', '❊'];
         
         this.init();
     }
@@ -44,7 +44,7 @@ class SnowEffect {
         snowflake.style.animationDelay = `${animationDelay}s`;
         
         // Add opacity variation
-        snowflake.style.opacity = Math.random() * 0.6 + 0.4; // 0.4-1.0
+        snowflake.style.opacity = Math.random() * 0.3 + 0.4; // 0.4-0.7
         
         this.container.appendChild(snowflake);
         this.snowflakes.push({
