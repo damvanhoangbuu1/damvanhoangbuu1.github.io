@@ -141,13 +141,6 @@
         $(this).parent().find('.calendar-button .atcb-click').click();
     });
 
-    // $( window ).on("load", function(){
-    // 	if($('.bii-logo').length > 0){
-    // 		$('#menu-access').css('bottom','278px');
-    // 		document.querySelector('style').textContent += "@media (max-width: 799px){#menu-access{bottom: 238px!important;}}"
-    // 	} 
-    // })
-
 })(window.jQuery);
 
 $(document).ready(function () {
