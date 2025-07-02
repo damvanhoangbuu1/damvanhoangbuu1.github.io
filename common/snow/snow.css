@@ -27,7 +27,7 @@
 @keyframes snow-fall-1 {
     0% {
         transform: translateY(-100vh) rotate(0deg);
-        opacity: 1;
+        opacity: 0.5;
     }
 
     100% {
@@ -39,12 +39,12 @@
 @keyframes snow-fall-2 {
     0% {
         transform: translateY(-100vh) translateX(0px) rotate(0deg);
-        opacity: 1;
+        opacity: 0.5;
     }
 
     50% {
         transform: translateY(50vh) translateX(50px) rotate(180deg);
-        opacity: 1;
+        opacity: 0.5;
     }
 
     100% {
@@ -56,17 +56,17 @@
 @keyframes snow-fall-3 {
     0% {
         transform: translateY(-100vh) translateX(0px) rotate(0deg);
-        opacity: 1;
+        opacity: 0.5;
     }
 
     25% {
         transform: translateY(25vh) translateX(-30px) rotate(90deg);
-        opacity: 1;
+        opacity: 0.5;
     }
 
     75% {
         transform: translateY(75vh) translateX(30px) rotate(270deg);
-        opacity: 1;
+        opacity: 0.5;
     }
 
     100% {

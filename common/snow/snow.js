@@ -44,7 +44,7 @@ class SnowEffect {
         snowflake.style.animationDelay = `${animationDelay}s`;
         
         // Add opacity variation
-        snowflake.style.opacity = Math.random() * 0.3 + 0.4; // 0.4-0.7
+        snowflake.style.opacity = Math.random() * 0.3 + 0.2; // 0.4-0.5
         
         this.container.appendChild(snowflake);
         this.snowflakes.push({
